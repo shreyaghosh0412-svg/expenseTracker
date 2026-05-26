@@ -1,0 +1,80 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(13, 15, 20, 0.85);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  gap: 32px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'DM Serif Display', serif;
+  font-size: 20px;
+  color: var(--text);
+  flex-shrink: 0;
+}
+
+.brand-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: all 0.15s ease;
+}
+
+.nav-link:hover {
+  background: var(--bg-raised);
+  color: var(--text);
+}
+
+.nav-link.active {
+  background: var(--bg-raised);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.nav-link-admin { color: var(--amber); }
+.nav-link-admin:hover { background: var(--amber-bg); color: var(--amber); }
+.nav-link-admin.active { background: var(--amber-bg); color: var(--amber); border-color: rgba(251,191,36,0.2); }
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.navbar-username {
+  font-size: 13px;
+  color: var(--text-muted);
+}
